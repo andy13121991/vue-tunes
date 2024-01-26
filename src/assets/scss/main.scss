@@ -1,0 +1,109 @@
+// @import 'fonts';
+@import 'variables';
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,800');
+@import '~bulma';
+@import '~@mdi/font/css/materialdesignicons.css';
+
+html{
+	min-height: 100%;
+	background: rgb(131,58,180);
+	background: -moz-linear-gradient(322deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.7858543075433299) 62%, rgba(252,176,69,1) 100%);
+	background: -webkit-linear-gradient(322deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.7858543075433299) 62%, rgba(252,176,69,1) 100%);
+	background: linear-gradient(322deg, rgba(131,58,180,1) 0%, rgba(253,29,29,0.7858543075433299) 62%, rgba(252,176,69,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=1); 
+}
+
+body {
+	font-size: 1em;
+}
+
+#app {
+	font: {
+		size: 1em;
+		family: 'Nunito Sans', helvetica, arial, sans-serif;
+		weight: 600;
+	}
+
+	text-align: center;
+	margin: 0em auto 2em;
+	max-width: 100%;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	color: #fffa0d;
+}
+
+h1 {
+	font: {
+		size: 2.25em;
+		weight: 800;
+		style: normal;
+	}
+
+	text-align: center;
+	letter-spacing: -1px;
+}
+
+h1:first-child {
+	margin-top: 0;
+}
+
+header {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	margin-bottom: 1em;
+}
+
+.powered-by{
+	margin: 0.5em 0.5em 0.5em 0.5em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+img.vue-logo{
+	width: 2.5em;
+}
+
+.made-by{
+	margin-left: 1em;
+	font-size: 1.5em;
+	background: -webkit-linear-gradient(rgba(52,73,94,1), rgba(65,184,131,1));
+  				-webkit-background-clip: text;
+ 	 			-webkit-text-fill-color: transparent;
+}
+
+.content {
+	font-size: 1.15em;
+	line-height: 1.5em;
+	padding: 1.5em 1.75em;
+}
+
+.content h2{
+	color: white;
+}
+
+article {
+	text-align: left;
+}
+
+input.input{
+	background: url(../search.svg) no-repeat;
+	background-color: rgb(250, 247, 247);
+	background-position: top 7px left 5px;
+	padding-left: 3em;
+	border-radius: 0.9375em;
+	-webkit-border-radius: 0.9375em;
+	-moz-border-radius: 0.9375em;
+	-ms-border-radius: 0.9375em;
+	-o-border-radius: 0.9375em;
+}
+
+@media screen and (max-width: 520px) {
+	#app {
+		font-size: 0.85em;
+	}
+}
